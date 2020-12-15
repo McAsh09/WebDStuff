@@ -2,11 +2,17 @@
 <html>
 <head>
 <title>Mailing List Signup</title>
-<meta charset="utf-8">
+
+<style>
+    .textarea
+    {
+        background-color: rgba(51, 231, 6, 0.774);
+    }
+</style>
 </head>
 <body>
     <h1>Mailing List Signup</h1>
-    <form action="/mailinglist.php">
+    <form action="/mailinglist.php" method="POST">
     <fieldset>
     <legend>Join our email list</legend>
     <p>Get news about the band such as tour dates and special MP3
@@ -19,7 +25,16 @@
     </ol>
     <input type="submit" value="Submit">
     </fieldset>
-    </form>  
+    </form>
+    
+    <!-- Multiline text entry with content already inside -->
+    <p>
+        <label>Write something about yourself:
+            <br>
+            <textarea class="textarea">This area is already filled for writing</textarea>
+        </label>       
+
+    </p>
    
 
     </body>
